@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="  Welcome to Kirmani's EduHub, your gateway to knowledge and skill development. We are dedicated to
+    providing high-quality, accessible education for learners of all ages and backgrounds">
+    <meta name="keywords" content="KirmaniEduhub">
+    <meta name="robots" content="index , follow">
+    <title>Testing PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="static/images/style.css">
+
+<body>
+    <!--START NAVBAR SECTION-->
+    <header class="navbar-section">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="../static/images/WhatsApp_Image_2024-05-04_at_10.49.01_PM-removebg-preview3.png"
+                        alt="honey Analyzer logo" width="30%" height="auto">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}" target="_blank">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('testing') }}" target="_blank">Testing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bottom">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--END NAVBAR SECTION-->
+    
+
+
+    <section class="testing-section">
+        <div class="main-content">
+            <h1>Testing Here</h1>
+            <h2><span style="font-weight: 900;">Is Your Honey Is Pure?</span><br>
+                Honey adulteration detection via hyperspectral imaging coupled with machine learning enables rapid and
+                accurate identification of adulterants, safeguarding the quality and authenticity of honey products.
+                This non-destructive, rapid, and accurate approach offers a promising solution for honey quality
+                control, ensuring authenticity and safety for consumers.
+            </h2>
+              </div>
+   
+
+            <div class="input">
+                <div class="input-data">
+                    <p> Upload your CSV file and press Predict
+                    <form action="/transform" method="post" enctype="multipart/form-data">
+                        <div class="file-input">
+                            <input type="file" name="data_file" accept=".csv" required>
+                        </div>
+                        <select name="task">
+                            <option value="honey_adulteration">Honey Adulteration</option>
+                            <option value="model_honey_class">Honey Class</option>
+                            <option value="honey_adulteration and class">Honey Class+Adulteration</option>
+                        </select>
+                        <button type="submit">Predict</button>
+
+
+                       
+
+    <div class="centered-bold-text">
+        <br>
+        <br>
+        {{ prediction_text }}
+    </div>
+</body>
+
+
+                </div>
+                </form>
+            </div>
+
+   </section>
+
+
+    <!-- Start-Contact-home-Section -->
+    <section class="contact-home-section" id="">
+        <div class="container grid grid-two-columns">
+            <div class="contact-content">
+                <h2 class="contact-title">Let's revolutionize the Honey adulteration</h2>
+                <p class="contact-para">Join our free Honey Adulteration Testing</p>
+                <div class="button"><a class="button" href="contact.html">
+                        Contact Us <i class="fa-solid fa-arrow-circle-right"></i>
+                    </a></div>
+            </div>
+            <div class="contact-image">
+                <img src="../static/images/honey-wooden-table__1_-removebg-preview.png" alt="honey Analyzer contact image">
+            </div>
+        </div>
+    </section>
+    <!-- End-Contact-home-Section -->
+
+
+    <!-- Start-Footer-Section -->
+    <footer>
+        <div class="container grid grid-four-column">
+            <div class="footer-1-div"  id="bottom">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-subheading">Honey Analyzer</a>
+                </div>
+                <p>
+                    Let's revolutionize the honey adulteration Testing!
+                </p>
+                <div class="social-footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-2-div">
+                <p class="footer-subheading">Honey Analyzer</p>
+                <ul>
+                    <li><a href="#">Manuka</a></li>
+                    <li><a href="#">Clover</a></li>
+                    <li><a href="#">Rewarewa</a></li>
+                    <li><a href="#">MultiFloral</a></li>
+                    <li><a href="#">Kamahi</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-3-div">
+                <p class="footer-subheading">Adulteration</p>
+                <ul>
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Honey</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-4-div">
+                <p class="footer-subheading">Members</p>
+                <ul>
+                    <li><a href="#">Anna Amjad</a></li>
+                    <li><a href="#">Hazrat Usman</a></li>
+                    <li><a href="#">Supervised by</a></li>
+                    <li><a href="#">Dr.Maryam</a></li>
+                    <li><a href="#">Cecos university</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- End-Footer-Section -->
